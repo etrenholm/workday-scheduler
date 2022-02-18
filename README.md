@@ -8,7 +8,7 @@
 * [Credit](#credit)
 
 ## Description
-Create a timed quiz on JavaScript fundamentals that stores high scores.
+Create a daily planner that can manage important dates and time.
 	
 ## Technologies
 Project was updated using:
