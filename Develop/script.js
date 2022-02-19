@@ -1,67 +1,43 @@
 // display current day at the top
-var currentDate = moment().format('dddd MMMM Do');
+var currentDate = moment().format('dddd, MMMM Do');
 $("#currentDay").html(currentDate);
 
-// present time blocks for standard business hours
-var timeBlock = function() {
+// when 'save' is clicked, the text for the time block is saved in local storage
+$(".saveBtn").click(function() {
 
-}
+    var time = $(this).parent().attr("id")
+    var value = $(this).siblings(".description").val()
+
+    localStorage.setItem(time, value)
+
+})
 
 // each block is color coded to indicate whether it is past, present, or future
-var checkTime = function() {
-    // get date from task element
+var currentHour = moment().hours()
+console.log(currentHour)
 
+$(".time-block").each(function() {
+    var blockHour = parseInt($(this).attr("id").split("-")[1])
+    if(){
+    $(this).addClass
+    console.log(blockHour)
+    }
+})
+
+    // get time
+    
+    // convert to moment object
     // remove old classes from the element
+    // apply/remove class if time is in the past/future
 
-    // apply new class if time is in the present
-
-    // apply new class if time is in the future
-
-}
-
-// click into time block, an event can be entered
-$(".description").on("click", "textarea", function() {
-    var text = $(this)
-    .text()
-    .trim();
-    console.log(text)
-
-    // get current text of p element
-    var textInput = $("<textarea>")
-    .addClass("form-control")
-    .val(text);
-
-    $(this).replaceWith(textInput);
-
-    // auto focus new element
-    textInput.trigger("focus");
-});
-
-// replace textarea element with a newtext area
-$(".description").on("blur", "textarea", function() {
-    var text = $(this)
-    .val()
-    .trim();
-
-    var newText = $(this)
-    .closest(".description")
-    .attr("class")
-    .replace("textarea", "");
-
-    var index = $(this)
-    .closest(".description")
-    .index();
-
-    description[newText][index].text = text;
-    saveBlock();
-
-});
-
-// when 'save' is clicked, the text for the event is saved in local storage
 
 // when page is refreshed, events persist
-var loadEvents = function(){
-    events = JSON.parse(localStorage.getItem("events"));
-}
-
-loadEvents();
+$("#time-9 .description").val(localStorage.getItem("time-9"));
+$("#time-10 .description").val(localStorage.getItem("time-10"));
+$("#time-11 .description").val(localStorage.getItem("time-11"));
+$("#time-12 .description").val(localStorage.getItem("time-12"));
+$("#time-13 .description").val(localStorage.getItem("time-13"));
+$("#time-14 .description").val(localStorage.getItem("time-14"));
+$("#time-15 .description").val(localStorage.getItem("time-15"));
+$("#time-16 .description").val(localStorage.getItem("time-16"));
+$("#time-17 .description").val(localStorage.getItem("time-17"));
