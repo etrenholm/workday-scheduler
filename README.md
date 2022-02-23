@@ -56,7 +56,7 @@ Project was updated using:
 * https://github.com/etrenholm/workday-scheduler
 * https://etrenholm.github.io/workday-scheduler
 
-![mockup](/develop/workdayscheduler-screenshot.png)
+![mockup](develop/workdayscheduler-screenshot.png)
 
 ## Credit
 
