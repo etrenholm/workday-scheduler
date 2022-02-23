@@ -30,10 +30,10 @@ Project was updated using:
 * Created a live link of my site in GitHub.
 * Create HTML file.
 
-### STEP 2. - UPDATED HTML FILE WITH TIMEBLOCKS
+### STEP 2. - UPDATE HTML FILE WITH TIMEBLOCKS
 * Used CSS file as a reference to create timeblocks in HTML.
 
-### STEP 3. - UPDATED HTML FILE WITH BOOSTRAP
+### STEP 3. - UPDATE HTML FILE WITH BOOTSTRAP
 * Added bootstrap classes to HTML.
 * Added bootstrap classes for mobile responsiveness.
 * Added save icon using fontawesome.
@@ -56,7 +56,7 @@ Project was updated using:
 * https://github.com/etrenholm/workday-scheduler
 * https://etrenholm.github.io/workday-scheduler
 
-![mockup](./develop/workdayscheduler-screenshot.png)
+![mockup](./Develop/assets/workdayscheduler-screenshot.png)
 
 ## Credit
 
