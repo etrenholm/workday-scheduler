@@ -18,6 +18,7 @@ Project was updated using:
 * JavaScript
 * JQuery
 * Moment.js
+* Bootstrap
 * Terminal (Mac)
 * Git
 * GitHub
@@ -29,12 +30,25 @@ Project was updated using:
 * Created a live link of my site in GitHub.
 * Create HTML file.
 
-### STEP 2. - CREATE QUIZ WITH JAVASCRIPT
-* 
+### STEP 2. - UPDATED HTML FILE WITH TIMEBLOCKS
+* Used CSS file as a reference to create timeblocks in HTML.
 
+### STEP 3. - UPDATED HTML FILE WITH BOOSTRAP
+* Added bootstrap classes to HTML.
+* Added bootstrap classes for mobile responsiveness.
+* Added save icon using fontawesome.
 
-### STEP 3. - FINALIZING
+### STEP 4. - CREATE FUNCTIONALITY WITH JAVASCRIPT
+* Used moment.js to add current date and time to the top of the page
+* Used moment.js to get current hour.
+* Get each block hour using each block's unique id.
+* Run a function to compare the current hour to the block hour.
+* Add and remove classes based on whether the hour is past, present, or future.
+* Save each description value for each time block in local storage so event persists when page is refreshed.
 
+### STEP 5. - FINALIZE
+* Made various commits throughout process to save progress
+* Tested functionality in GitHub pages
 
 
 ## Results
@@ -42,7 +56,7 @@ Project was updated using:
 * https://github.com/etrenholm/workday-scheduler
 * https://etrenholm.github.io/workday-scheduler
 
-![mockup](./)
+![mockup](/develop/workdayscheduler-screenshot.png)
 
 ## Credit
 

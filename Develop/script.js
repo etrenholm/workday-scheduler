@@ -4,32 +4,37 @@ $("#currentDay").html(currentDate);
 
 // when 'save' is clicked, the text for the time block is saved in local storage
 $(".saveBtn").click(function() {
-
     var time = $(this).parent().attr("id")
     var value = $(this).siblings(".description").val()
-
     localStorage.setItem(time, value)
-
 })
+
+// get time using moment
+var currentHour = moment().hours()
 
 // each block is color coded to indicate whether it is past, present, or future
-var currentHour = moment().hours()
-console.log(currentHour)
-
-$(".time-block").each(function() {
+$(".time-block").each(function(){
     var blockHour = parseInt($(this).attr("id").split("-")[1])
-    if(){
-    $(this).addClass
-    console.log(blockHour)
+
+    // if the block hour is less than the current hour - past
+    if(blockHour < currentHour){
+        $(this)
+        .removeClass("present", "future") // remove other classes
+        .addClass("past") // add new class
+    }
+    // if the block hour is equal to the current hour - present
+    else if(blockHour === currentHour){
+        $(this)
+        .removeClass("past", "future") // remove other classes
+        .addClass("present") // add new class
+    }
+    // if the block hour is greater than the current hour - future
+    else if(blockHour > currentHour){
+        $(this)
+        .removeClass("past", "present") // remove other classes
+        .addClass("future") // add new class
     }
 })
-
-    // get time
-    
-    // convert to moment object
-    // remove old classes from the element
-    // apply/remove class if time is in the past/future
-
 
 // when page is refreshed, events persist
 $("#time-9 .description").val(localStorage.getItem("time-9"));
